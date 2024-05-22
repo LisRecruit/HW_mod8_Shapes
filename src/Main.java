@@ -1,16 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        Circle circle = new Circle();
-        Triangle triangle = new Triangle();
-        Square square = new Square();
-        Rectangle rectangle = new Rectangle();
-        Pentagon pentagon = new Pentagon();
+        Shape circle = new Circle();
+        Shape triangle = new Triangle();
+        Shape square = new Square();
+        Shape rectangle = new Rectangle();
+        Shape pentagon = new Pentagon();
 
-        ShapeToPrint circleShapeToPrint = new ShapeToPrint(circle);
-        ShapeToPrint triangleShapeToPrint = new ShapeToPrint(triangle);
-        ShapeToPrint squareShapeToPrint = new ShapeToPrint(square);
-        ShapeToPrint rectangleShapeToPrint = new ShapeToPrint(rectangle);
-        ShapeToPrint pentagonShapeToPrint = new ShapeToPrint(pentagon);
+        ShapeToPrint print = new ShapeToPrint();
 
-        }
+        print.print(circle);
+        print.print(triangle);
+        print.print(square);
+        print.print(rectangle);
+        print.print(pentagon);
+
     }
+}

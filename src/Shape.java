@@ -1,4 +1,4 @@
-public class Shape implements Printable{
+abstract class Shape implements Printable{
     protected String name;
 
     public String getName() {
